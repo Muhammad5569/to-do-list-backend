@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const user = require('./routes/user')
 const task = require('./routes/task')
 const auth = require('./routes/auth')
+const morgan = require('morgan')
 const category = require('./routes/category')
 
 const app = express()
@@ -16,6 +17,7 @@ const port = process.env.PORT || 3000
 // var cors = require('cors');
 
 app.use(express.json())
+app.use(morgan('combined'))
 // app.use(cors())
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');

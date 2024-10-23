@@ -4,7 +4,7 @@ const validator = require('validator')
 const Task = require('./task')
 const jwt = require('jsonwebtoken')
 
-mongoose.connect('mongodb://127.0.0.1:27017').then(console.log('connected'))
+mongoose.connect('mongodb+srv://Muhammad0:Muhammad0@cluster0.kjh82.mongodb.net/task?retryWrites=true&w=majority&appName=Cluster0').then(console.log('connected'))
 
 const userSchema = mongoose.Schema({
     name:{

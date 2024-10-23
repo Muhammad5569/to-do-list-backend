@@ -8,7 +8,7 @@ const category = require('./routes/category')
 
 const app = express()
 
-const dbURI = 'mongodb://127.0.0.1:27017/task-pro';
+const dbURI = 'mongodb+srv://Muhammad0:Muhammad0@cluster0.kjh82.mongodb.net/task?retryWrites=true&w=majority&appName=Cluster0';
 
 // Establish a connection to MongoDB
 mongoose.createConnection(dbURI)

@@ -18,7 +18,7 @@ mongoose.createConnection(dbURI)
 const port = process.env.PORT || 3000
 const portHTTPS = process.env.PORTHTTPS || 4000
 const options = {
-  key: fs.readFileSync("C:/Users/777mu/Downloads/TaskManagerServer.pem")
+  key: fs.readFileSync("~/TaskManagerServer.pem")
 }
 // var cors = require('cors');
 
